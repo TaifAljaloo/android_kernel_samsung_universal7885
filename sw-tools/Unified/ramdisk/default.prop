@@ -51,3 +51,9 @@ ro.config.dmverity=false
 ro.config.rkp=false
 ro.config.kap=false
 ro.sec.fle.encryption=false 
+# RMM State
+ro.security.vaultkeeper.feature=0
+
+# Trebel support
+ro.treble.enabled=false
+
