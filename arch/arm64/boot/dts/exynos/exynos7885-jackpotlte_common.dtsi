@@ -56,8 +56,7 @@
 		};
 	};
 
-#if (ANDROID_VERSION >= 80000)
-	firmware {
+firmware {
 		android {
 			compatible = "android,firmware";
 			fstab {
@@ -69,24 +68,9 @@
 					mnt_flags = "ro";
 					fsmgr_flags = "wait";
 				};
-				vendor {
-					compatible = "android,vendor";
-					dev = "/dev/block/platform/13500000.dwmmc0/by-name/VENDOR";
-					type = "ext4";
-					mnt_flags = "ro";
-					fsmgr_flags = "wait";
-				};
-				odm {
-					compatible = "android,odm";
-					dev = "/dev/block/platform/13500000.dwmmc0/by-name/ODM";
-					type = "ext4";
-					mnt_flags = "ro";
-					fsmgr_flags = "wait";
-				};
 			};
 		};
 	};
-#endif
 
 	/* USI MODE SETTINGS
 
