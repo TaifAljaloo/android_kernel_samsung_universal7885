@@ -27,8 +27,8 @@ export ANDROID_MAJOR_VERSION=o
 export CROSS_COMPILE=$SW_TOOLCHAIN
 CLEAN_SOURCE()
 {
-#	make clean
-#	make mrproper
+	make clean
+	make mrproper
 	rm -r -f $SW_DIR/swift/dtb.img
 }
 BUILD_ZIMAGE()
