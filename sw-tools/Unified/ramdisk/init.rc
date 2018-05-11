@@ -1165,6 +1165,9 @@ on boot
     chown system system /sys/class/sec/tsp/z_value
     chown system system /sys/class/sec/tsp/sensitivity_mode
     chown system system /sys/class/sec/tsp/prox_power_off
+    chown system system /sys/class/sec/tsp/irq_recovery_count
+    chown system system /sys/class/sec/tsp/ic_reset_count
+    chown system system /sys/class/sec/tsp/mode_change_failed_count
     chown system system /sys/class/sec/tsp/ta_mode
     chown system system /dev/tspio
 
